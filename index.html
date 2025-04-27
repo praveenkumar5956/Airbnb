@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <div class="card">
+        <div class="nav-1">
+            <img class="img-1"
+                src="data:image/png;base64,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" />
+            <div class="box-1">
+                <button class="btn">stays</button>
+                <button class="btn">Experiences</button>
+            </div>
+            <div>
+                <button class="btn">Airbnb your home</button>
+                <button class="btn">profile</button>
+            </div>
+        </div>
+
+
+
+
+    </div>
+    <div class="card">
+        <div class="nav-2">
+            <div class="nav">
+                <p class="ctn">Where</p>
+                <input class="inpt" type="text" placeholder="Search destinations" />
+            </div>
+            <div class="nav">
+                <p class="ctn">Check In</p>
+                <input class="inpt" type="date" placeholder="Add dates" />
+            </div>
+            <div class="nav">
+                <p class="ctn">Check Out</p>
+                <input class="inpt" type="date" placeholder="Add dates" />
+            </div>
+            <div class="nav-no-brdr">
+                <p class="ctn">Who</p>
+                <input class="inpt" type="text" placeholder="Add guests" />
+            </div>
+
+        </div>
+    </div>
+    <div class="line"></div>
+    <div class="card">
+        <div class="nav-3">
+            <button class="btn">
+                <img class="nav-img" src="https://a0.muscache.com/pictures/a4634ca6-1407-4864-ab97-6e141967d782.jpg" />
+                <p class="ctn">lake</p>
+            </button>
+            <button class="btn">
+                <img class="nav-img"
+                    src="https://a0.muscache.com/im/pictures/mediaverse/category_icon/original/3e5243c8-4d15-4c6b-97e3-7ba2bb7bb880.png" />
+                <p class="ctn">Icons</p>
+            </button>
+            <button class="btn">
+                <img class="nav-img" src="https://a0.muscache.com/pictures/aaa02c2d-9f0d-4c41-878a-68c12ec6c6bd.jpg" />
+                <p class="ctn">Farms</p>
+            </button>
+            <button class="btn">
+                <img class="nav-img" src="https://a0.muscache.com/pictures/7630c83f-96a8-4232-9a10-0398661e2e6f.jpg" />
+                <p class="ctn">Rooms</p>
+            </button>
+            <button class="btn">
+                <img class="nav-img" src="https://a0.muscache.com/pictures/c8e2ed05-c666-47b6-99fc-4cb6edcde6b4.jpg" />
+                <p class="ctn">luxe</p>
+            </button>
+            <button class="btn">
+                <img class="nav-img" src="https://a0.muscache.com/pictures/d7445031-62c4-46d0-91c3-4f29f9790f7a.jpg" />
+                <p class="ctn">Earth homes</p>
+            </button>
+            <button class="btn">
+                <img class="nav-img" src="https://a0.muscache.com/pictures/3b1eb541-46d9-4bef-abc4-c37d77e3c21b.jpg" />
+                <p class="ctn">Amazing Views</p>
+            </button>
+            <button class="btn">
+                <img class="nav-img" src="https://a0.muscache.com/pictures/3fb523a0-b622-4368-8142-b5e03df7549b.jpg" />
+                <p class="ctn">Amazing pools</p>
+            </button>
+            <button class="btn">
+                <img class="nav-img" src="https://a0.muscache.com/pictures/6ad4bd95-f086-437d-97e3-14d12155ddfe.jpg" />
+                <p class="ctn">countryside</p>
+            </button>
+            <button class="btn">
+                <img class="nav-img" src="https://a0.muscache.com/pictures/bcd1adc0-5cee-4d7a-85ec-f6730b0f8d0c.jpg" />
+                <p class="ctn">Beachfront</p>
+            </button>
+            <button class="btn">Filter</button>
+            <button class="btn">Display total before taxes
+
+        </div>
+
+        <div class="hotel-cards">
+
+            <div class="hotel-card">
+                <div class="img-card">
+
+                    <img class="hotel-img"
+                        src="https://a0.muscache.com/im/pictures/8544a227-80b9-4621-8d84-667316a7f693.jpg?im_w=720&im_format=avif" />
+                    <div class="heart">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-heart-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+                        </svg>
+
+                    </div>
+
+                </div>
+                <div class="flex">
+                    <h4>Bangalore, India</h4>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg><span> 4.5</span>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>234$ night</p>
+            </div>
+            <div class="hotel-card">
+
+                <div class="img-card">
+                    <img class="hotel-img"
+                        src="https://a0.muscache.com/im/pictures/5660766e-06bd-448a-8727-f325d70383b3.jpg?im_w=720&im_format=avif" />
+
+                    <div class="heart">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-heart-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+                        </svg>
+
+                    </div>
+                </div>
+
+                <div class="flex">
+                    <h4>Kurnool, India</h4>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg><span> 4.0</span>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>140$ night</p>
+            </div>
+            <div class="hotel-card">
+                <div class="img-card">
+                    <img class="hotel-img"
+                        src="https://a0.muscache.com/im/pictures/9694f24b-db6e-4a16-ab46-4d21938f124c.jpg?im_w=720&im_format=avif" />
+
+                    <div class="heart">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-heart-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+                        </svg>
+
+                    </div>
+                </div>
+                <div class="flex">
+                    <h4>Hyderabad, India</h4>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg><span> 3.5</span>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>123$ night</p>
+            </div>
+            <div class="hotel-card">
+                <div class="img-card">
+                    <img class="hotel-img"
+                        src="https://a0.muscache.com/im/pictures/miso/Hosting-1296994956829034218/original/5ddd105d-6cc4-4e3b-a44c-5ed7ebb59e6e.jpeg?im_w=720&im_format=avif" />
+                    <div class="heart">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-heart-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+                        </svg>
+
+                    </div>
+                </div>
+
+                <div class="flex">
+                    <h4>Chennai, India</h4>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg><span> 4.5</span>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>300$ night</p>
+            </div>
+            <div class="hotel-card">
+                <div class="img-card">
+                    <img class="hotel-img"
+                        src="https://a0.muscache.com/im/pictures/hosting/Hosting-1148328343937191579/original/c373418b-3b9b-490a-b5fc-a4044729971b.jpeg?im_w=720&im_format=avif" />
+
+                    <div class="heart">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-heart-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+                        </svg>
+
+                    </div>
+                </div>
+                <div class="flex">
+                    <h4>Bangalore, India</h4>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg><span> 4.5</span>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>200$ night</p>
+            </div>
+            <div class="hotel-card">
+                <div class="img-card">
+                    <img class="hotel-img"
+                        src="https://a0.muscache.com/im/pictures/miso/Hosting-1000960203988816112/original/81deaf78-8075-400b-a6f1-53264214058c.jpeg?im_w=720&im_format=avif" />
+
+                    <div class="heart">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-heart-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+                        </svg>
+
+                    </div>
+                </div>
+                <div class="flex">
+                    <h4>Chennai, India</h4>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg><span> 2.5</span>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>280$ night</p>
+            </div>
+            <div class="hotel-card">
+                <div class="img-card">
+                    <img class="hotel-img"
+                        src="https://a0.muscache.com/im/pictures/hosting/Hosting-1084614581073343129/original/b9323b06-0583-44e1-826c-725ad6e163fa.jpeg?im_w=720&im_format=avif" />
+
+                    <div class="heart">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-heart-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+                        </svg>
+
+                    </div>
+                </div>
+                <div class="flex">
+                    <h4>Kadapa, India</h4>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg><span> 4.5</span>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>260$ night</p>
+            </div>
+            <div class="hotel-card">
+                <div class="img-card">
+                    <img class="hotel-img"
+                        src="https://a0.muscache.com/im/pictures/miso/Hosting-1132308563991657937/original/4cc2c21d-0dd7-4024-9695-90a2be1dd97d.jpeg?im_w=720&im_format=avif" />
+
+                    <div class="heart">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-heart-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+                        </svg>
+
+                    </div>
+                </div>
+                <div class="flex">
+                    <h4>Kadapa, India</h4>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg><span> 4.25</span>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>340$ night</p>
+            </div>
+
+        </div>
+    </div>
+    <button class="help">help ? </button>
+
+</body>
+
+</html>
